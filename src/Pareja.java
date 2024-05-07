@@ -28,6 +28,11 @@ public class Pareja {
         this.b = b;
     }
 
+    // comparar parejas
+    public boolean igual(Pareja pareja) {
+        return a == pareja.a && b == pareja.b;
+    }
+
     // toString
 
     public String toString() {

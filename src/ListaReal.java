@@ -33,6 +33,19 @@ public class ListaReal {
         Arrays.sort(list, 0, t);
     }
 
+    // compara listas
+    public double[] compara(ListaReal listaReal) {
+        double[] resultado = new double[t];
+        for (int i = 0; i < t; i++) {
+            for (int j = 0; j < listaReal.t; j++) {
+                if (list[i] == listaReal.list[j]) {
+                    resultado[i] = list[i];
+                }
+            }
+        }
+        return resultado;
+    }
+
     // toString
     public String toString() {
         String s = "[";

@@ -16,16 +16,19 @@ public class Main {
             if (pareja != null) {
                 System.out.println("5. Modificar pareja");
                 System.out.println("6. Ver pareja");
+                System.out.println("13. Comparar pareja con otra pareja");
             }
             if (listaEntera != null) {
                 System.out.println("7. Modificar lista de enteros");
                 System.out.println("8. Ver lista de enteros");
                 System.out.println("9. Ordenar lista de enteros");
+                System.out.println("14. Comparar lista de enteros con otra lista de enteros");
             }
             if (listaReal != null) {
                 System.out.println("10. Modificar lista de números reales");
                 System.out.println("11. Ver lista de números reales");
                 System.out.println("12. Ordenar lista de números reales");
+                System.out.println("15. Comparar lista de números reales con otra lista de números reales");
             }
 
 
@@ -93,14 +96,14 @@ public class Main {
                         int nuevoValorEntero = scanner.nextInt();
                         scanner.nextLine();
                         listaEntera.set(indiceEntero, nuevoValorEntero);
-                        System.out.println("Lista de enteros modificada: " + listaEntera.toString());
+                        System.out.println("Lista de enteros modificada: " + listaEntera);
                     } else {
                         System.out.println("No hay lista de enteros creada. Crea una lista primero.");
                     }
                     break;
                 case 8:
                     if (listaEntera != null) {
-                        System.out.println("Lista de enteros: " + listaEntera.toString());
+                        System.out.println("Lista de enteros: " + listaEntera);
                     } else {
                         System.out.println("No hay lista de enteros creada. Crea una lista primero.");
                     }
@@ -108,7 +111,7 @@ public class Main {
                 case 9:
                     if (listaEntera != null) {
                         listaEntera.ordenar();
-                        System.out.println("Lista de enteros ordenada: " + listaEntera.toString());
+                        System.out.println("Lista de enteros ordenada: " + listaEntera);
                     } else {
                         System.out.println("No hay lista de enteros creada. Crea una lista primero.");
                     }
@@ -122,14 +125,14 @@ public class Main {
                         double nuevoValorReal = scanner.nextDouble();
                         scanner.nextLine();
                         listaReal.set(indiceReal, nuevoValorReal);
-                        System.out.println("Lista de números reales modificada: " + listaReal.toString());
+                        System.out.println("Lista de números reales modificada: " + listaReal);
                     } else {
                         System.out.println("No hay lista de números reales creada. Crea una lista primero.");
                     }
                     break;
                 case 11:
                     if (listaReal != null) {
-                        System.out.println("Lista de números reales: " + listaReal.toString());
+                        System.out.println("Lista de números reales: " + listaReal);
                     } else {
                         System.out.println("No hay lista de números reales creada. Crea una lista primero.");
                     }
@@ -137,9 +140,23 @@ public class Main {
                 case 12:
                     if (listaReal != null) {
                         listaReal.ordenar();
-                        System.out.println("Lista de números reales ordenada: " + listaReal.toString());
+                        System.out.println("Lista de números reales ordenada: " + listaReal);
                     } else {
                         System.out.println("No hay lista de números reales creada. Crea una lista primero.");
+                    }
+                    break;
+                case 13:
+                    if (pareja != null) {
+                        System.out.println("Introduce el primer entero de la segunda pareja:");
+                        int a2 = scanner.nextInt();
+                        scanner.nextLine();
+                        System.out.println("Introduce el segundo entero de la segunda pareja:");
+                        int b2 = scanner.nextInt();
+                        scanner.nextLine();
+                        Pareja pareja2 = new Pareja(a2, b2);
+                        System.out.println("Las parejas son iguales: " + pareja.igual(pareja2));
+                    } else {
+                        System.out.println("No hay pareja creada. Crea una pareja primero.");
                     }
                     break;
             }

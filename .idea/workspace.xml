@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a361e0a-d232-4553-adaf-5b5b3ee3d914" name="Changes" comment="Interfaz de Usuario Interactiva">
+    <list default="true" id="4a361e0a-d232-4553-adaf-5b5b3ee3d914" name="Changes" comment="Ordenación y Búsqueda">
       <change beforePath="$PROJECT_DIR$/src/ListaEntera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListaEntera.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ListaReal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListaReal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pareja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pareja.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715104583637</updated>
-      <workItem from="1715104584598" duration="4633000" />
+      <workItem from="1715104584598" duration="6269000" />
     </task>
     <task id="LOCAL-00001" summary="Modelado Multidimensiona">
       <option name="closed" value="true" />
@@ -85,7 +86,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715109249476</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ordenación y Búsqueda">
+      <option name="closed" value="true" />
+      <created>1715112162114</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715112162114</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,14 +103,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modelado Multidimensiona" />
     <MESSAGE value="Interfaz de Usuario Interactiva" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interfaz de Usuario Interactiva" />
+    <MESSAGE value="Ordenación y Búsqueda" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ordenación y Búsqueda" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>148</line>
+          <line>165</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

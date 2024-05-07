@@ -33,6 +33,19 @@ public class ListaEntera {
         Arrays.sort(list, 0, t);
     }
 
+    // compara listas
+    public int[] compara(ListaEntera listaEntera) {
+        int[] resultado = new int[t];
+        for (int i = 0; i < t; i++) {
+            for (int j = 0; j < listaEntera.t; j++) {
+                if (list[i] == listaEntera.list[j]) {
+                    resultado[i] = list[i];
+                }
+            }
+        }
+        return resultado;
+    }
+
     // toString
     public String toString() {
         String s = "[";
