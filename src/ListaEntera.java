@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ListaEntera {
     // lista de números enteros
     private int[] list;
@@ -24,6 +26,11 @@ public class ListaEntera {
     // set
     public void set(int i, int x) {
         list[i] = x;
+    }
+
+    // ordenar
+    public void ordenar() {
+        Arrays.sort(list, 0, t);
     }
 
     // toString

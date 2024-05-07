@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ListaReal {
     // lista de números reales
     private double[] list;
@@ -24,6 +26,11 @@ public class ListaReal {
     // set
     public void set(int i, double x) {
         list[i] = x;
+    }
+
+    // ordenar
+    public void ordenar() {
+        Arrays.sort(list, 0, t);
     }
 
     // toString
